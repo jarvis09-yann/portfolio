@@ -1,0 +1,98 @@
+body {
+  font-family: Consolas, sans-serif;
+  color: #fafafa;
+  background-color: #0e1121;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Abaissez le z-index pour les particules | ah oui oui or something - QAEZZ */
+}
+
+#text-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#title {
+  font-weight: 500;
+  font-size: 400%;
+  text-align: center;
+}
+
+#ityped, #title span {
+  color: #4179e3;
+}
+
+#subtitle {
+  font-weight: 500;
+  font-size: 400%;
+  text-align: center;
+  margin-top: -2%;
+}
+
+#contact-info {
+  margin: 0px;
+  text-align: left;
+  position: absolute;
+  display: inline;
+  margin-bottom: 5px;
+}
+
+/* Stolen, i mean borrowed stuff part (from https://qaezz.dev) */
+
+#music-player {
+  z-index: 69;
+}
+
+#music-player #controls i {
+  cursor: pointer;
+
+  transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#music-player #controls i:hover {
+  transform: scale(.9);
+  opacity: .5;
+}
+
+#music-player {
+    display: inline-flex;
+    gap: 10px;
+    transform: scale(1.1);
+    margin-top: 20px;
+  }
+
+
+
+  #music-player {
+    position: fixed;
+    right: 3%; /* Place le div à droite de l'écran */
+    top: 0; /* Réglez la position verticale selon vos besoins */
+    display: inline-flex;
+    gap: 10px;
+    transform: scale(0.9);
+    margin-top: 20px;
+  }
+  
+
+
+@media only screen and (max-width: 250px) {
+
+  #opposite-side #music-player {
+    display: inline-flex;
+    gap: 10px;
+    transform: scale(.8);
+    margin-top: 10px;
+  }
+}
