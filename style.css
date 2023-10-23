@@ -109,10 +109,12 @@ html {
   color: rgba(200, 200, 200, .8);
   background-color: #0e1121;
   border: none;
+  transition: font-size 0.1s ease-in-out, height 0.1s ease-in-out;
 }
 
 #scroll-notice-button:hover {
-  size: 110%;
+  font-size: larger;
+  cursor: pointer;
 }
 
 #second-page {
