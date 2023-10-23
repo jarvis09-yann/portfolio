@@ -2,17 +2,16 @@ var audio;
 var playPauseButton = document.getElementById('play-pause');
 
 
-window.addEventListener('DOMContentLoaded', (event) => { // Waiting for the DOM to load
-    particlesJS.load('particles-js', './assets/particles.json', function() {
-        // console.log('callback - particles.js config loaded');
-        });
-    ityped.init(document.querySelector("#ityped"), {
-        showCursor: true,
-        strings: ["aviation enjoyer", "tech enthusiast", "bad programmer"], 
-    });
-    audio.volume = 0.5;
-    console.log(playPauseButton);
+// Setting up particles.js
+particlesJS.load('particles-js', './assets/particles.json')
+// Setting up ityped (typing animation)
+
+ityped.init(document.querySelector("#ityped"), {
+    showCursor: true,
+    strings: ["aviation enjoyer", "tech enthusiast", "bad programmer"], 
 });
+
+
 
 function toggleMusic() {
 
@@ -30,11 +29,13 @@ function toggleMusic() {
         }
 
         audio.play();
+        audio.volume = 0.75;
 
     } else {
         playPauseButton.classList.remove('fa-pause');
         playPauseButton.classList.add('fa-play');
 
         audio.pause();
+        audio.volume = 0.75;
     }
 }
