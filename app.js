@@ -12,7 +12,6 @@ ityped.init(document.querySelector("#ityped"), {
 });
 
 
-
 function toggleMusic() {
 
     console.log("Hello fellow dev! check out the website of the chad who fixed my code (and let me steal a good chunck of it) - QAEZZ :) (https://qaezz.dev)")

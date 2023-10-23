@@ -77,19 +77,28 @@ body {
 
   #music-player {
     position: fixed;
-    right: 3%; /* Place le div à droite de l'écran */
-    top: 0; /* Réglez la position verticale selon vos besoins */
+    right: 3%; 
+    top: 0; 
     display: inline-flex;
     gap: 10px;
     transform: scale(0.9);
     margin-top: 20px;
   }
-  
+
+#song-name {
+  margin-bottom: 0;
+  display: inline;
+}
+
+#song-artist {
+  margin-top: 5px;
+  display: block;
+}
 
 
 @media only screen and (max-width: 250px) {
 
-  #opposite-side #music-player {
+#music-player {
     display: inline-flex;
     gap: 10px;
     transform: scale(.8);
