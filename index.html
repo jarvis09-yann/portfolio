@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script defer src="./particles.js"></script>
+  <script defer src="./app.js"></script>
+  <script defer src="https://kit.fontawesome.com/dbe9888c2b.js" crossorigin="anonymous"></script>
+  
 
   <title>Portfolio</title>
 </head>
@@ -30,16 +34,21 @@
     <ul><i class="fa-brands fa-discord" alt="Discord Icon" title="Discord"></i> jarvis09</ul>
     <ul><i class="fa-solid fa-envelope" alt="E-mail Icon" title="E-mail"></i> lorem@ipmus.com</ul>
     <ul><i class="fa-brands fa-github" alt="Github Icon" title="Github"></i> jarvis09-yann</ul>
-    <ul><i class="fa-solid fa-globe" alt="Internet Icon" title="Internet website"></i> jarvis09.com</ul>
+    <ul><i class="fa-solid fa-globe" alt="Internet Icon" title="Internet website"></i> ltsu.fr/jarvis09</ul>
   </div>
 
-  <footer id="scroll-notice">
-    <p>scroll this page!</p>
+  <footer id="scroll-notice-container">
+    <button id="scroll-notice-button" onclick="scrollToSecondPage()">scroll this page!</button>
   </footer>
-  <h1 class="under">stuff</h1>
-  <script src="./particles.js"></script>
-  <script defer src="./app.js"></script>
-  <script src="https://kit.fontawesome.com/dbe9888c2b.js" crossorigin="anonymous"></script>
+  <div id="second-page">
+    <h1>Hello World!</h1>
+    <h2 id="second-page-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Atque excepturi ad cupiditate corrupti pariatur repellendus
+      veritatis repellat aspernatur minima! Fuga explicabo molestiae
+      excepturi dolor iusto hic aut itaque quos fugiat error eius
+      tempora praesentium, maxime, atque soluta est placeat. Commodi recusandae perferendis
+      laborum. Labore doloribus similique, libero illum beatae suscipit!</h2>
+  </div>
   <script src="https://unpkg.com/ityped@1.0.2"></script>
 </body>
 

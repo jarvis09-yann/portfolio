@@ -30,7 +30,7 @@ html {
   z-index: 1;
 }
 
-#title {
+#title{
   font-weight: 500;
   font-size: 400%;
   text-align: center;
@@ -94,15 +94,43 @@ html {
   }
 }
 
-#scroll-notice {
-  position: fixed;
-  color: rgba(200, 200, 200, .8);
+#scroll-notice-container {
+  z-index: 10;
+  position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 5px;
   text-align: center;
 }
 
-.under {
-  position: absolute;
-  bottom: -100rem;
+#scroll-notice-button {
+  size: 10vw;
+  font: inherit;
+  font-size: large;
+  color: rgba(200, 200, 200, .8);
+  background-color: #0e1121;
+  border: none;
+}
+
+#scroll-notice-button:hover {
+  size: 110%;
+}
+
+#second-page {
+  height: 70vh;
+  width: 100vw;
+  text-align: center;
+  position: relative;
+  text-align: center;
+  top: 100vh;
+}
+
+#second-page h1 {
+  font-weight: 500;
+  font-size: 400%;
+}
+
+#second-page h2 {
+  font-weight: 500;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }

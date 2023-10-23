@@ -41,9 +41,13 @@ function toggleMusic() {
 }
 
 window.addEventListener('scroll', function() {
-    var scrollNotice = document.getElementById("scroll-notice");
+    var scrollNotice = document.getElementById("scroll-notice-container");
     var scrollPosition = window.scrollY; // Obtenir la position de défilement verticale
 
     // Réglez l'opacité en fonction de la position de défilement
-    scrollNotice.style.opacity = 1 - scrollPosition / 100; // Réglage de la valeur 500 selon vos besoins
-  });
+    scrollNotice.style.opacity = 1 - scrollPosition / 300; // Réglage de la valeur 500 selon vos besoins
+});
+
+function scrollToSecondPage() {
+    document.getElementById("second-page-body").scrollIntoView({ behavior: "smooth", block: "center" });
+}
