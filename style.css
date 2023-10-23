@@ -34,6 +34,9 @@ html {
   font-weight: 500;
   font-size: 400%;
   text-align: center;
+}
+
+#name, #ityped {
   color: #4179e3;
 }
 
@@ -52,6 +55,7 @@ html {
 }
 
 #music-player {
+  z-index: 10;
   position: fixed;
   right: 3%;
   top: 0;
