@@ -48,22 +48,26 @@ html {
 }
 
 #contact-info {
-  font-size: large;
+  left: 0;
+  margin-left: 5vw;
+  font-size: larger;
   position: fixed;
   text-align: left;
-  display: inline;
-  margin-bottom: 5px;
+}
+#contact-info ul {
+  margin: 0;
+  padding: 0;
+  font-size: larger;
 }
 
 #music-player {
+  margin-right: 5vw;
   z-index: 10;
   position: fixed;
-  right: 3%;
-  top: 0;
-  display: inline-flex;
-  gap: 10px;
+  right: 0;
+  text-align: right;
+  /* gap: 10px; */
   transform: scale(0.9);
-  margin-top: 20px;
 }
 
 #music-player #controls i {
@@ -77,7 +81,6 @@ html {
 }
 
 #song-name {
-  margin-bottom: 0;
   display: inline;
 }
 
@@ -86,6 +89,9 @@ html {
   display: block;
 }
 
+#play-pause {
+  font-size: 3em;
+}
 @media only screen and (max-width: 250px) {
   #music-player {
     display: inline-flex;
@@ -99,7 +105,8 @@ html {
   z-index: 10;
   position: absolute;
   width: 100%;
-  bottom: 5px;
+  font-size: large;
+  bottom: 20px;
   text-align: center;
 }
 
@@ -155,4 +162,12 @@ html {
   opacity: 1;
   filter: blur(0px);
  transform: translateY(0%);
+}
+
+#header-container {
+  margin-top: 6vh;
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: flex-start;
 }
