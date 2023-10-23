@@ -48,6 +48,7 @@ html {
 }
 
 #contact-info {
+  font-size: large;
   position: fixed;
   text-align: left;
   display: inline;
@@ -135,4 +136,23 @@ html {
   font-weight: 500;
   margin-left: 2vw;
   margin-right: 2vw;
+}
+
+.hidden {
+ opacity: 0;
+ filter: blur(3px);
+ transform: translateY(50%);
+ transition: all 1s; 
+}
+
+@media(preffers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+ transform: translateY(0%);
 }

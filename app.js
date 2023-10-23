@@ -1,7 +1,20 @@
 var audio;
-var playPauseButton = document.getElementById("play-pause");
-var scrollNotice = document.getElementById("scroll-notice");
+const playPauseButton = document.getElementById("play-pause");
 
+const scrollNotice = document.getElementById("scroll-notice");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show");
+        }
+    });
+});
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
 
 // Setting up particles.js
 particlesJS.load("particles-js", "./assets/particles.json")
@@ -9,7 +22,7 @@ particlesJS.load("particles-js", "./assets/particles.json")
 
 ityped.init(document.querySelector("#ityped"), {
     showCursor: true,
-    strings: ["aviation enjoyer", "tech enthusiast", "bad programmer"], 
+    strings: ["plane enjoyer", "tech enthusiast", "bad programmer", "gamer"], 
 });
 
 
@@ -51,3 +64,4 @@ window.addEventListener('scroll', function() {
 function scrollToSecondPage() {
     document.getElementById("second-page-body").scrollIntoView({ behavior: "smooth", block: "center" });
 }
+
