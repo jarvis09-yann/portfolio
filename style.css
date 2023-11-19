@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
   font-family: Consolas, sans-serif;
   color: #fafafa;
@@ -23,10 +30,19 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 1;
 }
 
@@ -67,16 +83,22 @@ html {
   right: 0;
   text-align: right;
   /* gap: 10px; */
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 #music-player #controls i {
   cursor: pointer;
+  -webkit-transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #music-player #controls i:hover {
-  transform: scale(.9);
+  -webkit-transform: scale(.9);
+      -ms-transform: scale(.9);
+          transform: scale(.9);
   opacity: .5;
 }
 
@@ -99,9 +121,13 @@ html {
 }
 @media only screen and (max-width: 250px) {
   #music-player {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     gap: 10px;
-    transform: scale(.8);
+    -webkit-transform: scale(.8);
+        -ms-transform: scale(.8);
+            transform: scale(.8);
     margin-top: 10px;
   }
 }
@@ -122,6 +148,8 @@ html {
   color: rgba(200, 200, 200, .8);
   background-color: #0e1121;
   border: none;
+  -webkit-transition: font-size 0.1s ease-in-out, height 0.1s ease-in-out;
+  -o-transition: font-size 0.1s ease-in-out, height 0.1s ease-in-out;
   transition: font-size 0.1s ease-in-out, height 0.1s ease-in-out;
 }
 
@@ -152,39 +180,57 @@ html {
 
 .hidden {
  opacity: 0;
- filter: blur(3px);
- transform: translateY(50%);
+ -webkit-filter: blur(3px);
+         filter: blur(3px);
+ -webkit-transform: translateY(50%);
+     -ms-transform: translateY(50%);
+         transform: translateY(50%);
+ -webkit-transition: all 1s;
+ -o-transition: all 1s;
  transition: all 1s; 
 }
 
 @media(preffers-reduced-motion) {
   .hidden {
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
 }
 
 .show {
   opacity: 1;
-  filter: blur(0px);
- transform: translateY(0%);
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+ -webkit-transform: translateY(0%);
+     -ms-transform: translateY(0%);
+         transform: translateY(0%);
 }
 
 #header-container {
   margin-top: 6vh;
   height: auto;
   width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
+
 #footer {
-  position: absolute; bottom: 0; left: 0; padding: 5px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: .7;
+  position: absolute; bottom: 0; left: 0; padding: 20px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: .7;
 }
 
 #footer p {
   padding: 0; margin: 0;
+  font-size: large;
+  opacity: 0.8;
 }
 
 #footer a {
-  color: white;
+  color: #fafafa;
+
 }
