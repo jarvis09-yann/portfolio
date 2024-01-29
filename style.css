@@ -167,17 +167,6 @@ html {
   top: 100vh;
 }
 
-#second-page h1 {
-  font-weight: 500;
-  font-size: 400%;
-}
-
-#second-page h2 {
-  font-weight: 500;
-  margin-left: 2vw;
-  margin-right: 2vw;
-}
-
 .hidden {
  opacity: 0;
  -webkit-filter: blur(3px);
@@ -233,4 +222,39 @@ html {
 #footer a {
   color: #fafafa;
 
+}
+
+#rows-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 50px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px 10px; /* Adjust spacing between columns and rows */
+  position: relative;
+  text-align: center;
+}
+
+#second-page-title {
+  color: white;
+  font-weight: 500;
+  font-size: 350%;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  top: -90px;
+}
+
+.row {
+  line-height: 30px;
+  font-size: larger;
+}
+
+
+.row-title {
+  text-decoration: underline;
+  font-size: 150%;
 }

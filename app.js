@@ -1,11 +1,10 @@
 var audio;
 const playPauseButton = document.getElementById("play-pause");
-
-const scrollNotice = document.getElementById("scroll-notice");
+const scrollNotice = document.getElementById("scroll-notice-container");
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
+        // console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add("show");
         } else {
@@ -52,16 +51,17 @@ function toggleMusic() {
         audio.volume = 0.75;
     }
 }
+var scrollPosition = window.scrollY; // Using this i case a reload is done on the second
+scrollNotice.style.opacity = 1 - scrollPosition / 300;
+
 
 window.addEventListener('scroll', function() {
-    var scrollNotice = document.getElementById("scroll-notice-container");
-    var scrollPosition = window.scrollY; // Obtenir la position de défilement verticale
-
-    // Réglez l'opacité en fonction de la position de défilement
-    scrollNotice.style.opacity = 1 - scrollPosition / 300; // Réglage de la valeur 500 selon vos besoins
+    
+    var scrollPosition = window.scrollY; // Get scroll position
+    scrollNotice.style.opacity = 1 - scrollPosition / 300; // reduces opacity accordingly
 });
 
 function scrollToSecondPage() {
-    document.getElementById("second-page-body").scrollIntoView({ behavior: "smooth", block: "center" });
+    document.getElementById("second-page").scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
