@@ -50,7 +50,7 @@ function toggleMusic() {
         audio.pause();
     }
 }
-var scrollPosition = window.scrollY; // Using this i case a reload is done on the second
+var scrollPosition = window.scrollY; // Using this i case a reload is done on the second page
 scrollNotice.style.opacity = 1 - scrollPosition / 300;
 
 
@@ -71,3 +71,7 @@ splashScreen.addEventListener('click',()=>{
     // document.getElementById("website-content").style.display = "block"; // Show website content
   },0.3)
 })
+
+function scrollToSecondPage() {
+    document.getElementById("second-page").scrollIntoView({ behavior: "smooth", block: "center" });
+}
