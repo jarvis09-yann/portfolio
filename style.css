@@ -46,7 +46,7 @@ html {
   z-index: 1;
 }
 
-#title{
+#title, #splash-title {
   font-weight: 500;
   font-size: 400%;
   text-align: center;
@@ -210,7 +210,7 @@ html {
 
 
 #footer {
-  position: absolute; bottom: 0; left: 0; padding: 20px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: .7;
+  position: absolute; bottom: 0; left: 0; padding: 20px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; opacity: .7;
 }
 
 #footer p {
@@ -225,13 +225,19 @@ html {
 }
 
 #rows-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 10px 50px;
 }
 
 .column {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 20px 10px; /* Adjust spacing between columns and rows */
   position: relative;
   text-align: center;
@@ -257,4 +263,36 @@ html {
 .row-title {
   text-decoration: underline;
   font-size: 150%;
+}
+
+#splash-screen {
+  cursor : pointer;
+  position : fixed;
+  top : 50%;
+  left : 50%;
+  height : 95%;
+  width : 95%;
+  -webkit-transform : translate(-50%,-50%);
+      -ms-transform : translate(-50%,-50%);
+          transform : translate(-50%,-50%);  
+   -webkit-transition : all ease-in-out 300ms;
+  -o-transition : all ease-in-out 300ms;
+  transition : all ease-in-out 300ms;
+}
+
+#splash-title {
+  height : 90%;
+  display : -webkit-box;
+  display : -ms-flexbox;
+  display : flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align : center;
+      -ms-flex-align : center;
+          align-items : center;
+}
+
+#website-content {
+  display: none; /* Initially hide website content */
 }
