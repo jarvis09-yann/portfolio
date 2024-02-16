@@ -129,6 +129,7 @@ a {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: center;
+  row-gap: 50px;
 }
 
 .row {
@@ -136,7 +137,6 @@ a {
   width: 500px;
   height: 350px;
   margin: 0;
-  margin-bottom: 5vh;
   text-align: center;
 }
 
