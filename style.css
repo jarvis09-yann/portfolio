@@ -226,3 +226,60 @@ section {
   transition: transform 0.2s;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
+
+.about-me-container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 384px;
+  clip-path: circle();
+}
+
+.about-me-container p {
+  font-size: 24px;
+}
+
+.about-me-button {
+  text-decoration: none;
+  color: var(--c-text);
+  padding: 10px 20px;
+  width: 96px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.about-me-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.about-me-button:active {
+  transform: translateY(2px);
+  transition: transform 0.2s;
+}
+.about-me-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-me-buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
