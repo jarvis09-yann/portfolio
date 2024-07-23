@@ -6,7 +6,7 @@
   --c-lighter: #2e236c;
   --c-light: #c8acd6;
   --c-text: #d6d6d6;
-  /* --c-contrast: #8acd6e; */
+  --c-contrast: #8acd6e;
 }
 * {
   margin: 0;
@@ -25,12 +25,25 @@ ul {
 }
 
 body {
-  background-color: var(--c-bg);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: var(--c-text);
   font-style: normal;
   overflow-x: hidden;
+  background-image: linear-gradient(
+    200deg,
+    hsl(205deg 90% 4%) 0%,
+    hsl(198deg 68% 10%) 64%,
+    hsl(192deg 100% 13%) 81%,
+    hsl(188deg 100% 16%) 90%,
+    hsl(182deg 100% 19%) 95%,
+    hsl(176deg 100% 23%) 98%,
+    hsl(169deg 100% 27%) 100%,
+    hsl(155deg 52% 42%) 100%,
+    hsl(133deg 39% 55%) 100%,
+    hsl(102deg 49% 62%) 100%
+  );
+  /*https://www.joshwcomeau.com/gradient-generator?colors=010c14|8acd6e&angle=200&colorMode=hcl&precision=8&easingCurve=0.7189652015422953|0.9793103316734577|1.05|0.8112068833975956*/
 }
 
 #bg-video {
@@ -60,7 +73,6 @@ section {
   padding: 0;
   user-select: none; /*Disable page interraction for player controls*/
 }
-
 .main-title {
   display: flex;
   justify-content: center;
@@ -114,7 +126,7 @@ section {
   padding: 5px; /*For some reason, without this the text gets cut off at the beggining*/
 }
 
-.second-page h1 {
+.secondary-title h1 {
   font-size: 64px;
 }
 
@@ -187,4 +199,30 @@ section {
   align-items: center;
   flex-direction: column;
   margin: 20px;
+}
+
+.projects-container {
+  margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 50px;
+}
+.project {
+  width: 300px;
+  height: 128px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
