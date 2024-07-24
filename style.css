@@ -64,6 +64,17 @@ body {
   display: none;
 }
 
+.bold {
+  font-weight: 900;
+}
+
+.link:hover {
+  color: var(--c-contrast);
+  transition: color 0.2s;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 section {
   height: 100vh;
   width: auto;
@@ -97,6 +108,7 @@ section {
 }
 
 .gradient-text {
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
   background-image: linear-gradient(
       163deg,
@@ -126,7 +138,6 @@ section {
 
 .first-page h1 {
   font-size: 128px;
-  font-family: "Poppins", sans-serif;
   overflow: visible;
   padding: 5px; /*For some reason, without this the text gets cut off at the beggining*/
 }
@@ -234,7 +245,8 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.about-me-button:active {
+.about-me-button:active,
+.project:active {
   transform: translateY(2px);
   transition: transform 0.2s;
 }
@@ -283,4 +295,16 @@ section {
   display: flex;
   align-items: center;
   gap: 50px;
+}
+
+footer {
+  margin: 5px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 18px;
+  color: var(--c-text);
+  opacity: 0.8;
+  font-style: italic;
 }
