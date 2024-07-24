@@ -24,6 +24,11 @@ ul {
   list-style: none;
 }
 
+a {
+  color: var(--c-text);
+  text-decoration: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -219,12 +224,19 @@ section {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
-.project:hover {
+.project:hover,
+.about-me-button:hover {
   transform: scale(1.05);
   transition: transform 0.2s;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.about-me-button:active {
+  transform: translateY(2px);
+  transition: transform 0.2s;
 }
 
 .about-me-container {
@@ -246,7 +258,6 @@ section {
 
 .about-me-button {
   text-decoration: none;
-  color: var(--c-text);
   padding: 10px 20px;
   width: 96px;
   height: 32px;
@@ -262,16 +273,6 @@ section {
   font-size: 24px;
 }
 
-.about-me-button:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-.about-me-button:active {
-  transform: translateY(2px);
-  transition: transform 0.2s;
-}
 .about-me-text-container {
   display: flex;
   flex-direction: column;
