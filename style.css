@@ -87,13 +87,13 @@ section {
   flex-direction: column;
 }
 
-.mute-notice {
+.note-text {
   font-style: italic;
   position: absolute;
   right: 0;
   margin: 10px 10px 0 0;
   width: auto;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .gradient-text {
