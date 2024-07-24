@@ -18,6 +18,8 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+
+  overflow-x: hidden;
 }
 
 ul {
@@ -317,4 +319,87 @@ footer {
   align-items: center;
   flex-direction: column;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 1920px) {
+  #bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .first-page h1,
+  .second-page h1 {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .about-me-container p {
+    font-size: 16px;
+  }
+  .projects-container {
+    margin: 0;
+    gap: 20px;
+  }
+
+  .project {
+    width: 150px;
+    height: 96px;
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-me-text-container {
+    margin: 2px;
+    font-size: 8px;
+    text-wrap: wrap;
+  }
+  .about-me-button {
+    width: 80px;
+    height: 24px;
+    font-size: 18px;
+  }
+
+  .profile-picture {
+    width: 256px;
+  }
+  .secondary-title h1 {
+    font-size: 48px;
+  }
+
+  .about-me-buttons-container {
+    gap: 20px;
+  }
+
+  .about-me-text-container {
+    gap: 15px;
+  }
+
+  .about-me-buttons-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about-me-text-container p {
+    font-size: 2vh;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  .qna-container {
+    width: 100%;
+    font-size: 16px;
+  }
 }
