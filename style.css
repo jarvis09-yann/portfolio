@@ -456,6 +456,7 @@ section {
 
 footer {
   margin: 5px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,8 +488,14 @@ footer {
   font-size: 18px;
 }
 
-.cookie-notice {
-  font-size: 14px;
+.subtext-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 48px;
+}
+.subtext {
+  font-size: 18px;
   color: var(--c-text);
   opacity: 0.8;
   font-style: italic;
@@ -572,7 +579,8 @@ footer {
     font-size: 10px;
   }
 
-  .qna-container {
+  .qna-container,
+  .subtext-container {
     width: 100%;
     font-size: 16px;
   }
