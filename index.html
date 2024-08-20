@@ -1,149 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio - jarvis09.com</title>
+    <meta name="description" content="jarvis09's very fancy portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
     <script
       defer
-      src="https://kit.fontawesome.com/dbe9888c2b.js"
-      crossorigin="anonymous"
+      src="https://umami.jarvis09.com/script.js"
+      data-website-id="e3d4baa8-64d2-44a4-ae27-fff037bd7776"
     ></script>
   </head>
   <body>
-    <div id="particles-js"></div>
-    <div id="first-page">
-      <!-- Particles.js container -->
-      <div id="title-container">
-        <h1>Hello, I'm <span class="blue-text">jarvis09</span></h1>
-        <h1>A <span class="blue-text" id="ityped"></span>.</h1>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <section class="first-page">
+      <video autoplay loop disablePictureInPicture muted id="bg-video">
+        <source src="https://cdn.jarvis09.com/u/PsXVbw.webm" type="video/mp4" />
+      </video>
+      <p class="note-text">Click anywhere to toggle sound</p>
+      <div class="main-title">
+        <h1 class="gradient-text">jarvis09</h1>
+        <ul class="attributes subtitle">
+          <div class="attribute-container">
+            <li>Monkey code writer</li>
+          </div>
+          <div class="attribute-container">
+            <li>Aviation enthusiast</li>
+          </div>
+          <div class="attribute-container">
+            <li>Videogames enjoyer</li>
+          </div>
+        </ul>
       </div>
-      <header>
-        <div id="contact-info">
-          <ul>
-            <i
-              class="fa-brands fa-discord"
-              alt="Discord Icon"
-              title="Discord"
-            ></i>
-            jarvis09
-          </ul>
-          <ul>
-            <i
-              class="fa-solid fa-envelope"
-              alt="E-mail Icon"
-              title="E-mail"
-            ></i>
-            contact@jarvis09.com
-          </ul>
-          <ul>
-            <i class="fa-brands fa-github" alt="Github Icon" title="Github"></i>
-            jarvis09-yann
-          </ul>
-          <ul>
-            <i
-              class="fa-solid fa-globe"
-              alt="Internet Icon"
-              title="Internet website"
-            ></i>
-            jarvis09.com
-          </ul>
-        </div>
-        <div id="music-player">
-          <!-- TODO: add image of album -->
-          <h1>Outro</h1>
-          <h3 style="color: rgba(200, 200, 200, 0.8)" id="song-artist">M83</h3>
-          <div id="controls">
-            <i
-              onclick="toggleMusic()"
-              id="play-pause"
-              class="fa-2xl fa-solid fa-play first-run"
-            ></i>
+    </section>
+    <section class="second-page">
+      <div class="secondary-title">
+        <h1 class="gradient-text">Projects</h1>
+        <h2 class="subtitle">Some of my projects</h2>
+      </div>
+      <div class="projects-container">
+        <a href="https://cdn.jarvis09.com/go/vA4g4O">
+          <div class="project">
+            <h2>Portfolio</h2>
+            <p>
+              This website. This is the 2nd iteration (actually 3rd but let's
+              not talk about the 1st which was absolutely awful) that i've made
+              of this project.
+            </p>
+          </div>
+        </a>
+        <a href="https://github.com/jarvis09-yann/ChocoBot">
+          <div class="project">
+            <h2>ChocoBot</h2>
+            <p>
+              A silly discord bot i made looooong ago. it's not really good but
+              it works. I dont recommend reusing the code because it is really
+              old.
+            </p>
+          </div>
+        </a>
+        <a href="https://github.com/jarvis09-yann/Ton-cube">
+          <div class="project">
+            <h2>Toncube</h2>
+            <p>
+              The website for a (now deceased) hosting provider named Toncube.
+              Text on the website is in french.
+            </p>
+          </div>
+        </a>
+        <a href="https://blackmesa.jarvis09.com">
+          <div class="project">
+            <h2>Black Mesa landing page</h2>
+            <p>
+              A landing page for Black Mesa. The facility featured in Half Life
+              but you dont need to hear all that because you're a highly trained
+              professional.
+            </p>
+          </div>
+        </a>
+        <a href="https://floridaman.jarvis09.com">
+          <div class="project">
+            <h2>Florida Man headlines</h2>
+            <p>
+              A website showing randomly generated "Florida Man" headlines (not
+              finished, atm they are picked from a list, but one day i'll use a
+              LLM, if i manage to fine tune it, which i cant because of my
+              smooth brain)
+            </p>
+          </div>
+        </a>
+        <a href="https://github.com/jarvis09-yann/crimsonvalleynetwork">
+          <div class="project">
+            <h2>Crimson Valley Network</h2>
+            <p>
+              The website for a minecraft server named Crimson Valley Network.
+              Nothing special to say about it.
+            </p>
+          </div>
+        </a>
+      </div>
+      <p class="note-text">Click on the cards to go to the project's page</p>
+    </section>
+    <section class="third-page">
+      <div class="secondary-title">
+        <h1 class="gradient-text">About Me</h1>
+        <h2 class="subtitle">More about myself</h2>
+      </div>
+      <div class="about-me-container">
+        <img
+          src="https://cdn.jarvis09.com/u/OELnf5.JPG"
+          alt="A picture of a cat"
+          class="profile-picture"
+        />
+        <div class="about-me-text-container">
+          <p>
+            Who am i ? duh that's a complicated and very open question... I'll
+            try and do my best answering it. Im jarvis09, i am a frenchman (yeah
+            baguette haha yeah) who likes cats, programming, gaming and
+            aviation. You can reach out to me by clicking the buttons below, or
+            just by sending me a dm on my discord:
+            <span class="bold">jarvis09</span> (who would have thought?).
+            Anyway, i hope you'll enjoy my (badly made) website! (PS: might
+            wanna check out the about page in the footer)
+          </p>
+          <div class="about-me-buttons-container">
+            <a class="about-me-button" href="https://github.com/jarvis09-yann"
+              >Github</a
+            >
+            <a
+              class="about-me-button"
+              href="https://discord.com/users/721399612526559245"
+              >Discord</a
+            >
+            <a class="about-me-button" href="mailto:contact@jarvis09.com"
+              >E-Mail</a
+            >
+            <a class="about-me-button" href="./about.html">About</a>
           </div>
         </div>
-      </header>
-      <footer id="scroll-notice-container">
-        <a id="scroll-notice-button" href="#second-page"> scroll this page! </a>
+      </div>
+      <footer>
+        <p>
+          Made with ❤️ by <span class="bold">jarvis09</span> -
+          <a class="bold link" href="./about.html">About</a>
+          -
+          <a class="bold link" href="https://github.com/jarvis09-yann/portfolio"
+            >Github</a
+          >
+          (repo of this website) This website uses anonymous tracking (check
+          <a class="bold link" href="./about.html">about</a> page for more info)
+        </p>
       </footer>
-    </div>
-    <div id="second-page">
-      <h1 id="second-page-title">About <span class="blue-text">me</span>.</h1>
-      <div id="row-container">
-        <div class="row">
-          <h3>My Skills.</h3>
-          <p>
-            <br />● Python (Intermediate/advanced) <br />●
-            <span class="note" id="cpp-note">""C++""</span> (Arduino
-            programming) <br />● HTML/CSS/JS (Currently learning)<br />● Linux
-            (<span class="note" id="debian-note">Debian</span>, not main OS)<br />●
-            Graphic Design (OK tier)
-          </p>
-        </div>
-        <div class="tooltip" id="debian-tooltip">Server shenanigans.</div>
-        <div class="tooltip" id="cpp-tooltip">
-          If you're wondering why i added quotes, it's because what i call C++
-          <br />is just basic scripts with IO interraction, Serial port
-          communication<br />
-          and basic logic. Nothing like actual C++ with all the painful stuff.
-        </div>
-        <div class="row">
-          <h3>My Hobbies & Passions.</h3>
-          <p>
-            <br />● Aviation &
-            <span class="note" id="msfs-note">flight simulation.</span><br />
-            ● Videogames: Minecraft, GTAV,
-            <span class="note" id="ksp-note">KSP</span>.<br />● Electronics &
-            computer hardware<br />● Making god
-            <span class="note" id="code-note">awful code</span><br />● Im
-            somewhat outta things to say... <br />
-            uhh... how is your day going ?
-          </p>
-          <div class="tooltip" id="ksp-tooltip" class="hidden">
-            Kerbal Space Program is a spaceflight simulator.
-          </div>
-          <div class="tooltip" id="msfs-tooltip" class="hidden">
-            i mostly "play" Microsoft Flight Simulator 2020.
-          </div>
-          <div class="tooltip" id="code-tooltip" class="hidden">
-            If you like to hurt your eyes you can check my Github projects. I
-            have no liability for any harm or death caused by code inspection.
-          </div>
-        </div>
-        <div class="row">
-          <h3>My projects.</h3>
-          <p>
-            <br />● This website. The first im <br />"publishing" to the
-            WorldWide Web<br />●
-            <a href="https://github.com/jarvis09-yann/ChocoBot">Chocobot</a>, a
-            simple discord bot built around
-            <span class="note" id="chocobot-note">a joke</span>.<br />PS:
-            <strong>The bot's comment and variables are in French</strong>
-            <br />There isn't really anything more that i think good<br />
-            enough to be listed on my website
-          </p>
-          <div class="tooltip" id="chocobot-tooltip">
-            There is a debate in France on wheter this delicious little pastry
-            should be called chocolatine or pain au chocolat -obviously the
-            right answer is chocolatine and anyone saying pain au chocolat is
-            ABSOLUTELY wrong-.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="footer">
-      <p>
-        Copyright (c) 2024 jarvis09. Music credits:
-        <a href="https://www.naiverecords.com/">Naïve Records</a>
-      </p>
-      <p>
-        This site is <b><i>heavily</i></b> inspired by
-        <a href="https://qaezz.dev">qaezz.dev</a>
-      </p>
-    </div>
-    <script defer src="./particles.js"></script>
-    <script src="https://unpkg.com/ityped@1.0.3"></script>
-    <script defer src="./app.js"></script>
+    </section>
+
+    <script src="./app.js" async defer></script>
   </body>
 </html>
