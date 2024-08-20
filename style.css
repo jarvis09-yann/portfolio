@@ -99,7 +99,6 @@ body {
 }
 
 section {
-  height: 100vh;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +116,7 @@ section {
 }
 
 .first-page {
+  height: 100vh;
   padding: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -456,17 +456,13 @@ section {
 
 footer {
   margin: 5px;
-  height: 20%;
-  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: end;
+  align-items: flex-end;
   font-size: 18px;
   color: var(--c-text);
   opacity: 0.8;
@@ -489,6 +485,13 @@ footer {
   -ms-flex-direction: column;
   flex-direction: column;
   font-size: 18px;
+}
+
+.cookie-notice {
+  font-size: 14px;
+  color: var(--c-text);
+  opacity: 0.8;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 800px) {
